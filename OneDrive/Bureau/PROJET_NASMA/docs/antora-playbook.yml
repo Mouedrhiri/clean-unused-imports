@@ -1,0 +1,27 @@
+# antora-playbook.yml
+
+site:
+  title: "Documentation AHBS"
+  start_page: "frontend:index.adoc"
+  url: "/"
+
+content:
+  sources:
+    - url: ./modules/backend
+      branches: master
+    - url: ./modules/frontend
+      branches: master
+    - url: ./modules/data-manipulation
+      branches: master
+
+ui:
+  bundle:
+    url: "https://docs.antora.org/antora/latest/ui/dist"
+
+output:
+  dir: ./public
+
+asciidoc:
+  attributes:
+    imagesdir: images
+    icons: font
