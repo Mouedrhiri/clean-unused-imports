@@ -1,0 +1,49 @@
+{
+  "name": "clean-unused-imports",
+  "version": "1.0.0",
+  "description": "Un outil pour supprimer les imports non utilisés dans les fichiers JavaScript/TypeScript",
+  "type": "module",
+  "bin": {
+    "clean-unused-imports": "./index.js"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "import",
+    "clean",
+    "unused",
+    "optimization",
+    "javascript",
+    "typescript",
+    "babel",
+    "ast"
+  ],
+  "author": "VotreNom <votre.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mouedrhiri/clean-unused-imports"
+  },
+  "homepage": "https://github.com/Mouedrhiri/clean-unused-imports#readme",
+  "bugs": {
+    "url": "https://github.com/Mouedrhiri/clean-unused-imports/issues"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "@babel/generator": "^7.23.0",
+    "@babel/types": "^7.23.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
